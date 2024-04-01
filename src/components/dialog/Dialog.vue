@@ -210,13 +210,6 @@
         },
         mounted() {
             this.isActive = true
-
-            this.$nextTick(() => {
-                // Handle which element receives focus
-                this.hasInput
-                    ? this.$refs.input.focus()
-                    : this.$refs.confirmButton.focus()
-            })
         },
         beforeDestroy() {
             if (typeof window !== 'undefined') {
